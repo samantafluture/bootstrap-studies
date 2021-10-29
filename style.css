@@ -1,0 +1,39 @@
+/* Default, mobile devices (max 576px) */
+.breakpoints {
+    border: 1px solid red;
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+    .breakpoints {
+        border: 1px solid blue;
+    }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+    .breakpoints {
+        border: 1px solid green;
+    }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+    .breakpoints {
+        border: 1px solid yellow;
+    }
+}
+
+/* X-Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+    .breakpoints {
+        border: 1px solid purple;
+    }
+}
+
+/* XX-Large devices (larger desktops, 1400px and up) */
+@media (min-width: 1400px) {
+    .breakpoints {
+        border: 1px solid black;
+    }
+}
