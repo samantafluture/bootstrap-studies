@@ -1,39 +1,62 @@
-/* Default, mobile devices (max 576px) */
-.breakpoints {
+.grid-system > .row {
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+.grid-system [class*="col"] {
+  background-color: aquamarine;
+}
+
+.level-2, .level-3 {
+    padding: 20px;
+} 
+
+.flex-system > div {
+    margin-top: 8px;
+}
+.flex-system [class*="flex"] {
+  background-color: rgb(244, 158, 239);
+}
+
+blockquote {
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+
+.bk {
     border: 1px solid red;
 }
 
 /* Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) {
-    .breakpoints {
+    .bk {
         border: 1px solid blue;
     }
 }
 
 /* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) {
-    .breakpoints {
+    .bk {
         border: 1px solid green;
     }
 }
 
 /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) {
-    .breakpoints {
+    .bk {
         border: 1px solid yellow;
     }
 }
 
 /* X-Large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {
-    .breakpoints {
+    .bk {
         border: 1px solid purple;
     }
 }
 
 /* XX-Large devices (larger desktops, 1400px and up) */
 @media (min-width: 1400px) {
-    .breakpoints {
+    .bk {
         border: 1px solid black;
     }
 }

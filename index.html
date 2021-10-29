@@ -14,53 +14,204 @@
         <link rel="stylesheet" href="style.css" />
     </head>
     <body>
-
         <!-- containers -->
-        <div class="container breakpoints">
-            <p>.container: centralizado, largura fixa</p>
-        </div>
-        <div class="container-fluid breakpoints">
-            <p>.container-fluid: sem padding, sem margin</p>
+        <div class="container bk">container: centralized, fixed width</div>
+        <div class="container-fluid bk">
+            container-fluid: no padding, no margin
         </div>
 
         <!-- grid system -->
-        <div class="container">
+        <div class="container grid-system">
             <div class="row">
-                <div class="col-12 breakpoints">
-                    <p>.container > .row > .col-12</p>
+                <div class="col-12 bk">.col-12</div>
+            </div>
+            <div class="row">
+                <div class="col-8 bk">.col-8</div>
+                <div class="col-4 bk">.col-4</div>
+            </div>
+            <div class="row">
+                <div class="col bk">.col (automatic .col-3.5)</div>
+                <div class="col-5 bk">.col-5</div>
+                <div class="col bk">.col (automatic .col-3.5)</div>
+            </div>
+            <div class="row">
+                <div class="col-8 col-md-4 bk">.col-8 ou .col-md-4</div>
+                <div class="col-2 col-md-4 bk">.col-2 ou .col-md-4</div>
+                <div class="col-2 col-md-4 bk">.col-2 ou .col-md-4</div>
+            </div>
+            <div class="row">
+                <div class="col-sm-8 bk">.col-sm-8 (starting from sm)</div>
+                <div class="col-sm-4 bk">.col-sm-4 (starting from sm)</div>
+            </div>
+            <div class="row">
+                <div class="col-12 col-lg-4 bk">
+                    .col-12 col-lg-4 (same row from lg)
+                </div>
+                <div class="col-12 col-lg-8 bk">
+                    .col-12 col-lg-8 (same row from lg)
                 </div>
             </div>
             <div class="row">
-                <div class="col-8 breakpoints">
-                    <p>.container > .row > .col-8</p>
+                <div class="col col-md-3 order-sm-3 bk">
+                    .col .col-md-3 .order-sm-3
                 </div>
-                <div class="col-4 breakpoints">
-                    <p>.container > .row > .col-4</p>
+                <div class="col col-md-3 order-sm-2 bk">
+                    .col .col-md-3 .order-sm-2
+                </div>
+                <div class="col col-md-6 order-sm-1 bk">
+                    .col .col-md-6 .order-sm-1
                 </div>
             </div>
             <div class="row">
-                <div class="col-8 col-md-4 breakpoints">
-                    <p>.container > .row > .col-8 ou .col-md-4</p>
+                <div class="col-sm-4 bk">.col-sm-4</div>
+                <div class="col-sm-4 offset-sm-4 bk">
+                    .col-sm-4 .offset-sm-4
                 </div>
-                <div class="col-2 col-md-4 breakpoints">
-                    <p>.container > .row > .col-2 ou .col-md-4</p>
-                </div>
-                <div class="col-2 col-md-4 breakpoints">
-                    <p>.container > .row > .col-2 ou .col-md-4</p>
+            </div>
+            <div class="row level-1">
+                <div class="col-12 bk">
+                    .col-12 (level 1)
+                    <div class="row level-2">
+                        <div class="col-8 bk">
+                            .col-8 (level 2)
+                            <div class="row level-3">
+                                <div class="col-6 bk">.col-6 (level 3)</div>
+                                <div class="col-6 bk">.col-6 (level 3)</div>
+                            </div>
+                        </div>
+                        <div class="col-4 bk">.col-4 (level 2)</div>
+                    </div>
                 </div>
             </div>
         </div>
 
-        
+        <!-- display flex -->
+        <div class="container flex-system">
+            <div class="d-flex bk">
+                <div class="p-2 m-2 bk">d-flex</div>
+                <div class="p-2 m-2 bk">d-flex</div>
+            </div>
+            <div class="d-inline-flex bk">
+                <div class="p-2 m-2 bk">d-inline-flex</div>
+                <div class="p-2 m-2 bk">d-inline-flex</div>
+            </div>
+            <div class="d-flex flex-row-reverse bk">
+                <div class="p-2 m-2 bk">d-flex flex-row-reverse</div>
+                <div class="p-2 m-2 bk">d-flex flex-row-reverse</div>
+            </div>
+            <div class="d-flex flex-column bk">
+                <div class="p-2 m-2 bk">d-flex flex-column</div>
+                <div class="p-2 m-2 bk">d-flex flex-column</div>
+                <div class="p-2 m-2 bk">d-flex flex-column</div>
+            </div>
+            <div class="d-flex justify-content-center bk">
+                <div class="p-2 m-2 bk">d-flex justify-content-center</div>
+                <div class="p-2 m-2 bk">d-flex justify-content-center</div>
+            </div>
+            <div class="d-flex justify-content-between bk">
+                <div class="p-2 m-2 bk">d-flex justify-content-between</div>
+                <div class="p-2 m-2 bk">d-flex justify-content-between</div>
+            </div>
+            <div
+                class="d-flex justify-content-between align-items-stretch bk"
+                style="min-height: 150px"
+            >
+                <div class="p-2 m-2 bk">
+                    d-flex justify-content-between align-items-stretch
+                </div>
+                <div class="p-2 m-2 bk">
+                    d-flex justify-content-between align-items-stretch
+                </div>
+            </div>
+            <div
+                class="d-flex justify-content-between align-items-start bk"
+                style="min-height: 150px"
+            >
+                <div class="p-2 m-2 bk">
+                    d-flex justify-content-between align-items-start
+                </div>
+                <div class="p-2 m-2 bk">
+                    d-flex justify-content-between align-items-start
+                </div>
+            </div>
+            <div class="d-flex flex-column align-items-center bk">
+                <div class="p-2 m-2 bk">
+                    d-flex flex-column align-items-center
+                </div>
+                <div class="p-2 m-2 bk">
+                    d-flex flex-column align-items-center
+                </div>
+                <div class="p-2 m-2 bk">
+                    d-flex flex-column align-items-center
+                </div>
+            </div>
+            <div class="d-flex flex-column align-items-start bk">
+                <div class="p-2 m-2 bk">
+                    d-flex flex-column align-items-start
+                </div>
+                <div class="p-2 m-2 bk">
+                    d-flex flex-column align-items-start
+                </div>
+                <div class="p-2 m-2 bk">
+                    d-flex flex-column align-items-start
+                </div>
+            </div>
+            <div class="d-flex bk">
+                <div class="flex-fill p-2 m-2 bk">
+                    flex-fill (div size = size content)
+                </div>
+                <div class="flex-fill p-2 m-2 bk">2</div>
+                <div class="flex-fill p-2 m-2 bk">3</div>
+            </div>
+            <div class="d-flex bk">
+                <div class="flex-grow-1 p-2 m-2 bk">
+                    flex-grow (div size = grow)
+                </div>
+                <div class="p-2 m-2 bk">2</div>
+                <div class="p-2 m-2 bk">3</div>
+            </div>
+            <div class="d-flex flex-wrap bk">
+                <div class="p-2 m-2 bk">d-flex flex-wrap</div>
+                <div class="p-2 m-2 bk">d-flex flex-wrap</div>
+                <div class="p-2 m-2 bk">d-flex flex-wrap</div>
+                <div class="p-2 m-2 bk">d-flex flex-wrap</div>
+                <div class="p-2 m-2 bk">d-flex flex-wrap</div>
+                <div class="p-2 m-2 bk">d-flex flex-wrap</div>
+                <div class="p-2 m-2 bk">d-flex flex-wrap</div>
+            </div>
+        </div>
 
+        <!-- typography -->
+        <blockquote class="blockquote text-center">
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer
+                posuere erat a ante.
+            </p>
+            <footer class="blockquote-footer">
+                Name of the Source
+                <cite title="Source Title">Source Title</cite>
+            </footer>
+        </blockquote>
 
-
-
-
-
-
-
-
+        <!-- lists -->
+        <div class="container">
+            <ul class="list-unstyled">
+                <li>list-unstyled 1</li>
+                <li>list-unstyled 2</li>
+                <li>list-unstyled 3</li>
+                <li>list-unstyled 4</li>
+            </ul>
+            <ul class="list-inline">
+                <li class="list-inline-item">list-inline > list-inline-item 1</li>
+                <li class="list-inline-item">list-inline > list-inline-item 2</li>
+                <li class="list-inline-item">list-inline > list-inline-item 3</li>
+                <li class="list-inline-item">list-inline > list-inline-item 4</li>
+            </ul>
+            <dl class="row">
+                <dt class="col-sm-3">dt col-sm-3</dt>
+                <dd class="col-sm-9">dd: description of a definition list w/ col-sm-9</dd>
+            </dl>
+        </div>
 
         <!-- Arquivos CDN de JS do jQuery e Bootstrap Bundle -->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
