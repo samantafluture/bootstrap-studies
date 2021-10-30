@@ -56,7 +56,40 @@
 
 - p-1 a p-4 (de 0.25 a 1rem)
 - m-1 a m4 (de 0.25 a 1rem)
+- mx-auto = margin no eixo x -> 0 auto
 
-## listas
+## image
+
+- `img-fluid` para ela ficar responsiva
+- `img-thumbnail` para com uma borda
+- `img-fluid rounded` para ela ficar responsiva e arredondada
+
+## tables
+
+- class `table` deixa a tabela responsiva
+- usar ela dentro da tag `<table></table>`
+- cores: `table-dark` ou `table-light` usando em tags table ou interiores à table
+- `table-striped` fica uma cor escura e outra clara
+- `table-hover` acende a linha onde o mouse está
+- `table-bordered` coloca borda em tudo
+- `table-borderless` tira todas as bordas
+
+## alertas
+
+- class `alert` pode ter também `alert-primary` ou `alert-danger` etc para mudar a cor
+
+## buttons
+
+- class `btn` e `btn-primary` (entre outros -danger etc) podem ser usadas com: `<a>` e `<input>` 
+- outline = contorno (`outline-primary`)
+- `btn-block` pega todo o espaço do container
+- `active` mostra o visual do botão pressionado
+- atributo html `disabled` deixa o visual desabilitado
+
+## list-group
+
+- div com `list-group` e internamente div (uma ou mais) com `list-group-item`
+- refere-se à agrupamento de itens de conteúdo (não importa quais)
+- `list-group-item-action` é para mostrar ação de clique (tem hover, tem cursor hand, etc)
 
 
